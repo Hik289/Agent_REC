@@ -56,7 +56,7 @@ Both settings use a two-stage pipeline:
 ## Framework
 
 <p align="center">
-  <img src="assets/pipeline.png" alt="Two-stage constrained recommendation pipeline" width="950">
+  <img src="assets/pipeline.png" alt="Two-stage constrained recommendation pipeline" width="80%">
 </p>
 
 The framework starts from a task query, a unified calling-tree dataset, and an
@@ -67,7 +67,7 @@ recommended agent or final calling-graph execution plan.
 ## Unified Data Representation
 
 <p align="center">
-  <img src="assets/data.png" alt="Unified multi-agent dataset representation" width="950">
+  <img src="assets/data.png" alt="Unified multi-agent dataset representation" width="80%">
 </p>
 
 The normalized data representation connects each calling tree to a metadata-rich
