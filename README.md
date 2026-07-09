@@ -40,12 +40,48 @@ Both settings use a two-stage pipeline:
 2. **Utility optimization** ranks candidates with a learned scorer over
    relevance, reliability, interaction, and structural features.
 
+## Paper Highlights
+
+- Formulates multi-agent recommendation as a constrained decision problem over
+  feasible agents or connected agent-system subgraphs.
+- Uses historical calling trees as structured supervision, capturing
+  parent-child calls, dependency branches, and local cooperation patterns.
+- Provides two complementary learning settings: **SARL** for single-agent/tool
+  recommendation and **ASRL** for multi-agent subgraph recommendation.
+- Normalizes heterogeneous multi-agent invocation logs into a unified
+  calling-tree benchmark for systematic evaluation.
+- Optimizes selections with interpretable feature families for semantic
+  relevance, historical reliability, cooperation, and structure.
+
+## Framework
+
+<p align="center">
+  <img src="assets/pipeline.png" alt="Two-stage constrained recommendation pipeline" width="950">
+</p>
+
+The framework starts from a task query, a unified calling-tree dataset, and an
+agent pool. It retrieves feasible candidates for either SARL or ASRL, then
+reranks them with a shared parameterized scoring function before producing a
+recommended agent or final calling-graph execution plan.
+
+## Unified Data Representation
+
+<p align="center">
+  <img src="assets/data.png" alt="Unified multi-agent dataset representation" width="950">
+</p>
+
+The normalized data representation connects each calling tree to a metadata-rich
+agent/tool repository. Nodes represent concrete invocations, edges encode
+execution order or dependencies, and agent metadata provides reliability,
+latency, resource, category, and interface signals used by the recommender.
+
 ---
 
 ## Repository Contents
 
 | Component | Location | Purpose |
 |-----------|----------|---------|
+| Paper figures | `assets/` | Pipeline and unified data representation figures used in this README. |
 | Agent-level recommender | `single agent recommender/` | Tool selection with embedding retrieval and learning-to-rank. |
 | System-level recommender | `multi-agent system recommender/` | Calling-tree/subgraph candidate generation, retrieval, and ranking. |
 | Dataset notes | `data/README.md` | Format and Hugging Face source for normalized calling-tree corpora. |
@@ -227,6 +263,9 @@ Agent_REC/
 |-- requirements.txt
 |-- LTR_METRICS.md
 |-- PROJECT_INFO.md
+|-- assets/
+|   |-- data.png
+|   `-- pipeline.png
 |-- data/
 |-- single agent recommender/
 |   |-- tool_selection.py
