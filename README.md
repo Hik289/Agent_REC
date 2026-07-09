@@ -67,7 +67,7 @@ recommended agent or final calling-graph execution plan.
 ## Unified Data Representation
 
 <p align="center">
-  <img src="assets/data.png" alt="Unified multi-agent dataset representation" width="80%">
+  <img src="assets/t.png" alt="Unified multi-agent dataset representation" width="80%">
 </p>
 
 The normalized data representation connects each calling tree to a metadata-rich
@@ -264,7 +264,7 @@ Agent_REC/
 |-- LTR_METRICS.md
 |-- PROJECT_INFO.md
 |-- assets/
-|   |-- data.png
+|   |-- t.png
 |   `-- pipeline.png
 |-- data/
 |-- single agent recommender/
