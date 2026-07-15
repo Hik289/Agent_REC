@@ -5,9 +5,8 @@
 **Xinyuan Song, Liang Zhao**
 
 [![arXiv](https://img.shields.io/badge/arXiv-2601.22209-b31b1b.svg)](https://arxiv.org/abs/2601.22209)
-[![Paper](https://img.shields.io/badge/Paper-PDF-blue.svg)](https://arxiv.org/pdf/2601.22209)
-[![Code](https://img.shields.io/badge/GitHub-Code-black.svg)](https://github.com/Hik289/Agent_REC)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB.svg)](requirements.txt)
 
 **Official implementation for "Learning to Recommend Multi-Agent Subgraphs from Calling Trees."**
 
