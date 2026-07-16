@@ -14,6 +14,12 @@
 
 ---
 
+## At a Glance
+
+- **Research question.** Can historical calling trees reveal which multi-agent subgraphs should be reused for a new task?
+- **Core idea.** The framework learns tool and agent recommendations from normalized execution graphs under budget and connectivity constraints.
+- **What is included.** Calling-tree preprocessing, agent-level and system-level recommenders, ranking models, metrics, and visualization utilities.
+
 ## Overview
 
 Multi-agent systems increasingly solve tasks by selecting agents and tools from
@@ -39,7 +45,7 @@ Both settings use a two-stage pipeline:
 2. **Utility optimization** ranks candidates with a learned scorer over
    relevance, reliability, interaction, and structural features.
 
-## Paper Highlights
+## Key Contributions
 
 - Formulates multi-agent recommendation as a constrained decision problem over
   feasible agents or connected agent-system subgraphs.
@@ -76,7 +82,7 @@ latency, resource, category, and interface signals used by the recommender.
 
 ---
 
-## Repository Contents
+## Repository Structure
 
 | Component | Location | Purpose |
 |-----------|----------|---------|
@@ -253,7 +259,7 @@ See `LTR_METRICS.md` for implementation details.
 
 ---
 
-## Directory Structure
+## Directory Tree
 
 ```text
 Agent_REC/
