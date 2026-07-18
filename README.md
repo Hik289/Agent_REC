@@ -160,7 +160,13 @@ scikit-learn, NumPy, SciPy, and Matplotlib.
 
 ---
 
-## Agent-Level Recommendation
+## Reproducing Results
+
+The release exposes the two experimental pipelines from the paper as lightweight
+scripts. Use the agent-level commands for next-tool recommendation and the
+system-level commands for connected subgraph recommendation.
+
+### Agent-Level Recommendation
 
 Run embedding-based retrieval:
 
@@ -191,7 +197,7 @@ python visualize_results.py --output_dir ../output
 
 ---
 
-## System-Level Recommendation
+### System-Level Recommendation
 
 Generate connected candidate subgraphs from calling trees:
 
